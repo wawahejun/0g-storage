@@ -1,0 +1,30 @@
+{
+  "blockchain": {
+    "rpc_endpoint": "https://evmrpc-testnet.0g.ai/",
+    "private_key": "",
+    "chain_id": 16600
+  },
+  "indexer": {
+    "endpoint": "https://indexer-storage-testnet-turbo.0g.ai"
+  },
+  "file": {
+        "input_file": "test_4gb_file.bin",
+        "output_directory": "./output",
+        "fragment_size": 209715200,
+        "number_of_parts": 10,
+        "generate_test_file": true,
+        "test_file_size": 4294967296
+    },
+  "upload": {
+    "expected_replica": 1,
+    "method": "min",
+    "full_trusted": true,
+    "max_retries": 5,
+    "timeout_minutes": 60,
+    "batch_size": 1
+  },
+  "download": {
+    "verify_proof": true,
+    "timeout_minutes": 60
+  }
+}
